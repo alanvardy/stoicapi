@@ -1,5 +1,5 @@
-defmodule StoicapiWeb.ErrorView do
-  use StoicapiWeb, :view
+defmodule StoicApiWeb.ErrorView do
+  use StoicApiWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

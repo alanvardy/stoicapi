@@ -1,7 +1,7 @@
 use Mix.Config
 
 # Configure your database
-config :stoicapi, Stoicapi.Repo,
+config :stoicapi, StoicApi.Repo,
   username: "postgres",
   password: "postgres",
   database: "stoicapi_test",
@@ -10,7 +10,7 @@ config :stoicapi, Stoicapi.Repo,
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :stoicapi, StoicapiWeb.Endpoint,
+config :stoicapi, StoicApiWeb.Endpoint,
   http: [port: 4002],
   server: false
 

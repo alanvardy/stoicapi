@@ -1,5 +1,5 @@
-defmodule StoicapiWeb.Router do
-  use StoicapiWeb, :router
+defmodule StoicApiWeb.Router do
+  use StoicApiWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule StoicapiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", StoicapiWeb do
+  scope "/", StoicApiWeb do
     pipe_through :browser
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", StoicapiWeb do
+  # scope "/api", StoicApiWeb do
   #   pipe_through :api
   # end
 end

@@ -1,4 +1,4 @@
-defmodule Stoicapi.DataCase do
+defmodule StoicApi.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule Stoicapi.DataCase do
 
   using do
     quote do
-      alias Stoicapi.Repo
+      alias StoicApi.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Stoicapi.DataCase
+      import StoicApi.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Stoicapi.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(StoicApi.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Stoicapi.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(StoicApi.Repo, {:shared, self()})
     end
 
     :ok

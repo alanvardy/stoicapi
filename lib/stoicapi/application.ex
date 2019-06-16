@@ -1,4 +1,4 @@
-defmodule Stoicapi.Application do
+defmodule StoicApi.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -9,23 +9,23 @@ defmodule Stoicapi.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Stoicapi.Repo,
+      StoicApi.Repo,
       # Start the endpoint when the application starts
-      StoicapiWeb.Endpoint
-      # Starts a worker by calling: Stoicapi.Worker.start_link(arg)
-      # {Stoicapi.Worker, arg},
+      StoicApiWeb.Endpoint
+      # Starts a worker by calling: StoicApi.Worker.start_link(arg)
+      # {StoicApi.Worker, arg},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Stoicapi.Supervisor]
+    opts = [strategy: :one_for_one, name: StoicApi.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    StoicapiWeb.Endpoint.config_change(changed, removed)
+    StoicApiWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end

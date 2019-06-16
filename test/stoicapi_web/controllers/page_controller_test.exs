@@ -1,5 +1,5 @@
-defmodule StoicapiWeb.PageControllerTest do
-  use StoicapiWeb.ConnCase
+defmodule StoicApiWeb.PageControllerTest do
+  use StoicApiWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

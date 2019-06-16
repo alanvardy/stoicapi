@@ -1,3 +1,3 @@
-defmodule StoicapiWeb.LayoutView do
-  use StoicapiWeb, :view
+defmodule StoicApiWeb.LayoutView do
+  use StoicApiWeb, :view
 end

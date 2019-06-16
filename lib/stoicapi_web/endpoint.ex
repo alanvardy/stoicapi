@@ -1,7 +1,7 @@
-defmodule StoicapiWeb.Endpoint do
+defmodule StoicApiWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :stoicapi
 
-  socket "/socket", StoicapiWeb.UserSocket,
+  socket "/socket", StoicApiWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -42,5 +42,5 @@ defmodule StoicapiWeb.Endpoint do
     key: "_stoicapi_key",
     signing_salt: "9w3/atmL"
 
-  plug StoicapiWeb.Router
+  plug StoicApiWeb.Router
 end

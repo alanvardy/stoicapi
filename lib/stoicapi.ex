@@ -1,6 +1,6 @@
-defmodule Stoicapi do
+defmodule StoicApi do
   @moduledoc """
-  Stoicapi keeps the contexts that define your domain
+  StoicApi keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

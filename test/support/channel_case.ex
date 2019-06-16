@@ -1,4 +1,4 @@
-defmodule StoicapiWeb.ChannelCase do
+defmodule StoicApiWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule StoicapiWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint StoicapiWeb.Endpoint
+      @endpoint StoicApiWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Stoicapi.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(StoicApi.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Stoicapi.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(StoicApi.Repo, {:shared, self()})
     end
 
     :ok

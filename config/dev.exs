@@ -1,7 +1,7 @@
 use Mix.Config
 
 # Configure your database
-config :stoicapi, Stoicapi.Repo,
+config :stoicapi, StoicApi.Repo,
   username: "postgres",
   password: "postgres",
   database: "stoicapi_dev",
@@ -15,7 +15,7 @@ config :stoicapi, Stoicapi.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :stoicapi, StoicapiWeb.Endpoint,
+config :stoicapi, StoicApiWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -55,7 +55,7 @@ config :stoicapi, StoicapiWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :stoicapi, StoicapiWeb.Endpoint,
+config :stoicapi, StoicApiWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",

@@ -1,4 +1,4 @@
-# Stoicapi
+# StoicApi
 
 To start your Phoenix server:
 

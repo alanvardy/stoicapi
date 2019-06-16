@@ -8,14 +8,14 @@
 use Mix.Config
 
 config :stoicapi,
-  ecto_repos: [Stoicapi.Repo]
+  ecto_repos: [StoicApi.Repo]
 
 # Configures the endpoint
-config :stoicapi, StoicapiWeb.Endpoint,
+config :stoicapi, StoicApiWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "mU2VBwO4O5uht572BGdxsbwYSl9VDQh+pw7P9sTQyyUsMAAPrA2bpYLoznaOR1ai",
-  render_errors: [view: StoicapiWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Stoicapi.PubSub, adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: StoicApiWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: StoicApi.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,

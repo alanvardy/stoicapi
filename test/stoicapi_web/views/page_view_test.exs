@@ -1,3 +1,3 @@
-defmodule StoicapiWeb.PageViewTest do
-  use StoicapiWeb.ConnCase, async: true
+defmodule StoicApiWeb.PageViewTest do
+  use StoicApiWeb.ConnCase, async: true
 end

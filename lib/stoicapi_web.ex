@@ -1,12 +1,12 @@
-defmodule StoicapiWeb do
+defmodule StoicApiWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use StoicapiWeb, :controller
-      use StoicapiWeb, :view
+      use StoicApiWeb, :controller
+      use StoicApiWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,11 +19,11 @@ defmodule StoicapiWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: StoicapiWeb
+      use Phoenix.Controller, namespace: StoicApiWeb
 
       import Plug.Conn
-      import StoicapiWeb.Gettext
-      alias StoicapiWeb.Router.Helpers, as: Routes
+      import StoicApiWeb.Gettext
+      alias StoicApiWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -31,7 +31,7 @@ defmodule StoicapiWeb do
     quote do
       use Phoenix.View,
         root: "lib/stoicapi_web/templates",
-        namespace: StoicapiWeb
+        namespace: StoicApiWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
@@ -39,9 +39,9 @@ defmodule StoicapiWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import StoicapiWeb.ErrorHelpers
-      import StoicapiWeb.Gettext
-      alias StoicapiWeb.Router.Helpers, as: Routes
+      import StoicApiWeb.ErrorHelpers
+      import StoicApiWeb.Gettext
+      alias StoicApiWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -56,7 +56,7 @@ defmodule StoicapiWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import StoicapiWeb.Gettext
+      import StoicApiWeb.Gettext
     end
   end
 

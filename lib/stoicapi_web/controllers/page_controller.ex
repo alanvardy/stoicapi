@@ -1,5 +1,5 @@
-defmodule StoicapiWeb.PageController do
-  use StoicapiWeb, :controller
+defmodule StoicApiWeb.PageController do
+  use StoicApiWeb, :controller
 
   def index(conn, _params) do
     render(conn, "index.html")

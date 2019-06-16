@@ -1,4 +1,4 @@
-defmodule Stoicapi.MixProject do
+defmodule StoicApi.MixProject do
   use Mix.Project
 
   def project do
@@ -19,7 +19,7 @@ defmodule Stoicapi.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Stoicapi.Application, []},
+      mod: {StoicApi.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

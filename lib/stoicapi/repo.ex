@@ -1,4 +1,4 @@
-defmodule Stoicapi.Repo do
+defmodule StoicApi.Repo do
   use Ecto.Repo,
     otp_app: :stoicapi,
     adapter: Ecto.Adapters.Postgres
