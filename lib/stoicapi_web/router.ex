@@ -19,8 +19,9 @@ defmodule StoicApiWeb.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", StoicApiWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", StoicApiWeb do
+    pipe_through :api
+
+    get "/quotes/random", QuoteController, :random
+  end
 end
