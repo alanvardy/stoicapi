@@ -332,7 +332,7 @@ defmodule StoicApi.Quote do
       %{
         content: """
         People are frugal in guarding their personal property; but as soon as \
-        it comes to squandering tim ethey are most wasteful of the one thing in \
+        it comes to squandering time they are most wasteful of the one thing in \
         which it is right to be stingy.\
         """,
         author: "Seneca",

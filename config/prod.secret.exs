@@ -15,6 +15,9 @@ database_url =
 config :stoicapi, StoicApi.Repo,
   # ssl: true,
   url: database_url,
+  database: "stoicapidb",
+  username: "postgres",
+  password: "postgres",
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
 secret_key_base =

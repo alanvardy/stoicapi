@@ -1,0 +1,4 @@
+# .buildpacks
+
+https://github.com/hashnuke/heroku-buildpack-elixir
+https://github.com/gjaldon/heroku-buildpack-phoenix-static
